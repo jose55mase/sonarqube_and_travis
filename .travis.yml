@@ -11,6 +11,7 @@ before_script:
 script:
   - ng lint
   - ng build --prod --base-href https://jose55mase.github.io/sonarqube_and_travis/
+
 deploy:
   provider: pages
   skip_cleanup: true
