@@ -13,6 +13,7 @@ script:
   - ng build --prod --base-href https://jose55mase.github.io/sonarqube_and_travis/
 
 deploy:
+
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
