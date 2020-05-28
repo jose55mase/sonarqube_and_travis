@@ -10,10 +10,9 @@ before_script:
   - npm install -g @angular/cli
 script:
   - ng lint
-  - ng build --prod --base-href https://jose55mase.github.io/sonarqube_and_travis/
+  #- ng build --prod --base-href https://jose55mase.github.io/sonarqube_and_travis/
 
 deploy:
-
   provider: script
   skip_cleanup: true
   script: deploy.sh
