@@ -14,10 +14,11 @@ script:
 
 deploy:
 
-  provider: pages
+  provider: script
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist/angular-tour-of-heroes
+  script: deploy.sh
+  #github_token: $GITHUB_TOKEN
+  #local_dir: dist/angular-tour-of-heroes
   on:
     branch: master
 
